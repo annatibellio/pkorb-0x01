@@ -1,0 +1,26 @@
+:root{--bg:#000;--fg:#d6e0ff;--dim:#6f84c9;--ac:#1f4dff;--ok:#5ee0a0;--bad:#ff6b7a;--pn:#050a1c}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--bg);color:var(--fg);font:14px/1.5 ui-monospace,"SF Mono",Menlo,Consolas,"Liberation Mono",monospace}
+body{padding:12px;max-width:820px;margin:0 auto}
+h1{font-size:15px;letter-spacing:.3em;margin:6px 0;text-align:center}
+.sub{color:var(--dim);text-align:center;font-size:11px;letter-spacing:.2em;margin-bottom:12px}
+section,details{border:1px solid var(--ac);border-radius:10px;background:var(--pn);padding:10px 12px;margin-bottom:12px}
+summary{cursor:pointer;color:var(--dim);letter-spacing:.15em}
+h2{font-size:13px;margin:0 0 6px;color:#fff;letter-spacing:.1em}
+.chips{display:flex;gap:6px;margin:8px 0}
+.chip{border:1px solid var(--ac);border-radius:6px;padding:1px 8px;color:var(--dim)}
+.chip.on{background:var(--ac);color:#fff}.chip.done{color:var(--ok);border-color:var(--ok)}
+ul{margin:4px 0;padding-left:18px}
+button,input{font:inherit;color:var(--fg);background:#000;border:1px solid var(--ac);border-radius:6px;padding:8px 10px;min-height:40px}
+button{cursor:pointer}button:hover:not(:disabled){background:var(--ac);color:#fff}button:disabled{opacity:.4;cursor:default}
+:focus-visible{outline:2px solid #fff;outline-offset:2px}
+form{display:flex;gap:6px;margin-top:8px}form input{flex:1;min-width:0}
+#hints div{color:var(--dim);border-left:2px solid var(--ac);padding-left:8px;margin:6px 0}
+#out{height:46vh;min-height:240px;overflow:auto;white-space:pre-wrap;word-break:break-word;border-bottom:1px dashed var(--ac);padding-bottom:6px}
+#out .c{color:#fff}#out .ok{color:var(--ok)}#out .bad{color:var(--bad)}#out .d{color:var(--dim)}
+.pr{color:var(--ac);align-self:center}
+#fin{display:none;animation:f 2.5s ease both}
+#letter{white-space:pre-wrap;word-break:break-word;font:inherit;margin:0;line-height:1.8}
+#letter p{margin:0 0 1.1em;opacity:0;animation:f 1.8s ease forwards}
+@keyframes f{from{opacity:0}to{opacity:1}}
+@media(prefers-reduced-motion:reduce){#fin{animation:none}#letter p{animation:none;opacity:1}}

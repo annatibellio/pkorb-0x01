@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PKORB // 0x01</title>
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<meta name="description" content="PKORB // 0x01"></head><body>
+<h1>PKORB // 0x01</h1>
+<div class="sub" id="st">ARCHIVE 001 · STATUS: ABANDONED</div>
+
+<details id="panel"><summary>INVESTIGATION PANEL</summary>
+ <div class="chips" id="chips" aria-label="Phase progress"></div>
+ <div>Evidence collected:</div><ul id="ev"></ul>
+ <div>Decoded fragments:</div><ul id="fr"></ul><div>Recent commands:</div><ul id="hi"></ul>
+ <button id="reset" type="button">Reset investigation</button>
+</details>
+
+<section id="mission" aria-live="polite">
+ <h2 id="mt"></h2><div id="mo"></div>
+ <button id="hb" type="button"></button><div id="hints"></div>
+ <form id="af" autocomplete="off"><label class="pr" for="ai">ANSWER&gt;</label><input id="ai" maxlength="80" autocapitalize="characters" spellcheck="false"><button>SUBMIT</button></form>
+</section>
+
+<section aria-label="Terminal">
+ <div id="out" role="log" aria-live="polite" tabindex="0"></div>
+ <form id="cf" autocomplete="off"><label class="pr" for="ci">$</label><input id="ci" maxlength="200" autocapitalize="none" autocorrect="off" spellcheck="false" placeholder="type help"><button>RUN</button></form>
+</section>
+
+<section id="fin" aria-label="Final letter"><div id="letter"></div></section>
+
+
+<script src="script.js" defer></script></body></html>
